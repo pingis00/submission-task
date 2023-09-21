@@ -394,6 +394,10 @@ header {
                     color: #191919;
                     text-decoration: none;
 
+                    &:hover {
+                        text-decoration:underline;
+                    }
+
                     img {
                         margin-bottom: -40px;
 
@@ -531,6 +535,87 @@ header {
     }
 }
 
+.our-services {
+    background-color: #F0EFE9;
+    .container {
+
+        .section-title {
+            width: 100%;
+            height: auto;
+            padding-bottom: 50px;
+
+            @media (min-width: 1200px) {
+                width: 38%;
+                height: auto;
+                padding-bottom: 50px;
+            }
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            @media (min-width: 1200px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 30px;
+            }
+            
+            .service {
+                background-color: white;
+                padding: 50px 20px;
+
+                i {
+                    float: right;
+                    font-size: 3rem;
+                    --fa-primary-color: white;
+                    --fa-secondary-color: black;
+                    --fa-secondary-opacity: 1;
+                }
+
+                &.active {
+                    background-color: #F9D783;
+                    i {
+                        --fa-primary-color: black;
+                        --fa-secondary-color: white;
+                        --fa-secondary-opacity: 1;
+                    } 
+                }
+
+                &:hover {
+                    background-color: #F9D783; 
+
+                    i {
+                        --fa-primary-color: black;
+                        --fa-secondary-color: white;
+                        --fa-secondary-opacity: 1;
+                    }    
+                }
+    
+                .box {
+                    color: #191919;
+                    text-decoration: none;
+                    border-top: 2px solid black;
+                    padding-left: 40px; 
+                }
+            }
+        }
+
+        .button {
+            margin-top: 45px;
+            text-align: center;
+            padding-bottom: 115px;
+        }
+    }
+}
+
 .project-and-case {
 
     .container {
@@ -558,7 +643,6 @@ header {
                 img {
                     width: 100%;
                     height: auto;
-
                 }
 
                 h3 {
@@ -594,3 +678,57 @@ header {
 }
 
 
+.ou-services {
+    background-color: #F0EFE9;
+    padding-top: 50px;
+    .container {
+
+        .section-title {
+            width: 38%;
+            height: auto;
+            padding-bottom: 50px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            
+            .service {
+                background-color: white;
+                padding: 50px 20px;
+    
+                .box {
+                    color: #191919;
+                    text-decoration: none;
+                    border-top: 2px solid black;
+                    padding-left: 40px;
+                    
+
+                    .test {
+                        
+
+                    }
+
+                    i {
+                        float: right;
+                        font-size: 3rem;
+                        color: #191919;
+
+                        &:hover {
+                            color: white;
+                            background-color: black;
+                            border: none;
+                        }
+                    }                   
+                }
+            }
+        }
+
+        .button {
+            margin-top: 45px;
+            text-align: center;
+            padding-bottom: 115px;
+        }
+    }
+}
