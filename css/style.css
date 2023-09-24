@@ -87,6 +87,7 @@ html, body {
 }
 .section-title p {
   color: #F94D1C;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .section-title h2 {
@@ -623,43 +624,147 @@ header .container .menu .btn-login {
   margin-bottom: 90px;
 }
 
-.ou-services {
-  background-color: #F0EFE9;
-  padding-top: 50px;
+.meet-our-team {
+  background-color: rgb(237, 207, 134);
 }
-.ou-services .container .section-title {
-  width: 38%;
+.meet-our-team .container .intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .intro {
+    margin-bottom: 90px;
+  }
+}
+.meet-our-team .container .intro .section-title {
+  padding-bottom: 0;
+}
+.meet-our-team .container .intro button {
+  width: 240px;
   height: auto;
-  padding-bottom: 50px;
+  align-self: end;
+  border: 1px solid #191919;
+  border-radius: 35px;
+  padding: 10px 20px;
 }
-.ou-services .container .services {
+.meet-our-team .container .intro button i {
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container .intro button i {
+    margin-left: 30px;
+  }
+}
+.meet-our-team .container .img-team {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
-.ou-services .container .services .service {
-  background-color: white;
-  padding: 50px 20px;
+@media (min-width: 768px) {
+  .meet-our-team .container .img-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
 }
-.ou-services .container .services .service .box {
-  color: #191919;
-  text-decoration: none;
-  border-top: 2px solid black;
-  padding-left: 40px;
+.meet-our-team .container .img-team .team-member img {
+  width: 100%;
+  height: auto;
 }
-.ou-services .container .services .service .box i {
-  float: right;
-  font-size: 3rem;
-  color: #191919;
+.meet-our-team .container .img-team .team-member h3 {
+  font-size: 19px;
+  padding-bottom: 0;
+  padding-top: 10px;
 }
-.ou-services .container .services .service .box i:hover {
-  color: white;
-  background-color: black;
-  border: none;
+@media (min-width: 992px) {
+  .meet-our-team .container .img-team .team-member h3 {
+    font-size: 22px;
+    padding-top: 35px;
+  }
 }
-.ou-services .container .button {
-  margin-top: 45px;
+.meet-our-team .container .img-team .team-member p {
+  margin-top: -8px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .img-team .team-member p {
+    margin-top: 0;
+  }
+}
+.meet-our-team .container .dots {
   text-align: center;
-  padding-bottom: 115px;
+}
+.meet-our-team .container .dots .dot {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(195, 171, 111);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .dots .dot {
+    margin-top: 50px;
+  }
+}
+.meet-our-team .container .dots #black-dot {
+  background-color: #191919;
+}
+
+.testimonial {
+  background-color: rgb(237, 207, 134);
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+.testimonial .background {
+  background-color: white;
+  width: 1520px;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+.testimonial .background .section-title {
+  text-align: center;
+}
+.testimonial .background .clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.testimonial .background .clients .client {
+  margin-left: 30px;
+  margin-right: 50px;
+}
+.testimonial .background .clients .client .stars {
+  margin-bottom: 30px;
+}
+.testimonial .background .clients .client p {
+  line-height: 2;
+  font-size: 18px;
+}
+.testimonial .background .clients .client .img-name {
+  display: flex;
+  align-items: center;
+}
+.testimonial .background .clients .client .img-name img {
+  margin-right: 20px;
+}
+.testimonial .background .clients .client .img-name p {
+  color: #F94D1C;
+  font-size: 16px;
+  font-weight: 400;
+}
+.testimonial .center-content {
+  margin-top: 90px;
+  margin-bottom: 120px;
+}
+.testimonial .center-content .btn-black {
+  width: 190px;
+  padding: 18px 30px;
+  border-radius: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }

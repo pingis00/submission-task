@@ -93,6 +93,7 @@ html, body {
 
     p {
         color: #F94D1C;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
@@ -616,6 +617,71 @@ header {
     }
 }
 
+// .why-us {
+//     padding-top: 60px;
+//     .container {
+//         display: flex;
+
+//         .left-section {
+//             width: 34%;
+//             margin-right: 150px;
+
+//             .section-title {
+//                 padding-top: 0;
+//                 padding-bottom: 0;
+
+//                 h2 {
+//                     text-align: left;
+//                 }
+//                 p {
+//                    font-size: 18px;
+//                 }
+//             }
+//             .test {
+
+//                 .text {
+//                     display: flex;
+//                     align-items: center;
+//                     margin-left: 15px;
+//                     margin-bottom: -25px;
+    
+//                     img {
+//                         margin-right: 30px;
+//                     }
+
+//                     h3 {
+//                         font-size: 22px;
+//                     }
+                    
+//                     p {
+//                         font-family: 'Inter', sans-serif;
+//                         font-size: 16px;
+//                         font-weight: 400; 
+//                         margin-top: 10px;
+//                     } 
+//                 }
+//             }
+//         }
+        
+
+//         .right-section {
+//             background-color: #F0EFE9;
+//             width: 66%;
+//             align-self: end;
+//             position: relative; 
+//             height: 425px;
+            
+//             img {
+//                 position: absolute;
+//                 bottom: 100px;
+//                 right: 0;
+//                 width: auto;
+//                 height: auto; 
+//             }
+//         }
+//     }
+// }
+
 .project-and-case {
 
     .container {
@@ -677,58 +743,170 @@ header {
     }
 }
 
-
-.ou-services {
-    background-color: #F0EFE9;
-    padding-top: 50px;
+.meet-our-team {
+    background-color: rgb(237,207,134);
     .container {
 
-        .section-title {
-            width: 38%;
-            height: auto;
-            padding-bottom: 50px;
-        }
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
 
-        .services {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 30px;
-            
-            .service {
-                background-color: white;
-                padding: 50px 20px;
-    
-                .box {
-                    color: #191919;
-                    text-decoration: none;
-                    border-top: 2px solid black;
-                    padding-left: 40px;
-                    
+            @media (min-width: 992px) {
+                margin-bottom: 90px;
+            }
 
-                    .test {
-                        
+            .section-title {
+                padding-bottom: 0;
+            }
 
-                    }
+            button {
+                width: 240px;
+                height: auto;
+                align-self: end;
+                border: 1px solid #191919;
+                border-radius: 35px;
+                padding: 10px 20px;
+
+                i {
+                    margin-left: 10px;
+                }
+
+                @media (min-width: 768px) {
 
                     i {
-                        float: right;
-                        font-size: 3rem;
-                        color: #191919;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+        
 
-                        &:hover {
-                            color: white;
-                            background-color: black;
-                            border: none;
-                        }
-                    }                   
+        .img-team {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 15px;
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 30px;
+            }
+            .team-member {
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3 {  
+                    font-size: 19px;
+                    padding-bottom: 0;
+                    padding-top: 10px;
+
+                    @media (min-width: 992px) {
+                        font-size: 22px;
+                        padding-top: 35px;
+                    }
+                }
+
+                p {
+                    margin-top: -8px;
+
+                    @media (min-width: 992px) {
+                        margin-top: 0;
+                    }
                 }
             }
         }
 
-        .button {
-            margin-top: 45px;
+        .dots {
             text-align: center;
-            padding-bottom: 115px;
+            .dot {
+                height: 12px;
+                width: 12px;
+                background-color: rgb(195,171,111);
+                border-radius: 50%;
+                display: inline-block;
+                margin-top: 20px;
+                margin-right: 10px; 
+
+                @media (min-width: 992px) {
+                    margin-top: 50px;
+                }
+
+            }
+            #black-dot {
+                background-color: #191919;
+            }
+        }        
+    }
+}
+
+
+.testimonial {
+    background-color: rgb(237,207,134);
+    display: flex;
+    height: auto;
+    justify-content: center;
+
+    .background {
+        background-color: white;
+        width: 1520px;
+        margin-top: 70px;
+        margin-bottom: 120px;
+
+        .section-title {
+            text-align: center;
+        }
+
+        .clients {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            // column-gap: 10px;
+            
+
+            .client {
+                margin-left: 30px;
+                margin-right: 50px;
+
+                .stars {
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    line-height: 2;
+                    font-size: 18px;
+                }
+                .img-name {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 20px;
+                    }
+
+                    p {
+                        color: #F94D1C;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }   
+        }
+    }
+
+    .center-content {
+        margin-top: 90px;
+        margin-bottom: 120px;
+        
+        .btn-black {
+            width: 190px;
+            padding: 18px 30px;
+            border-radius: 40px;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
         }
     }
 }
