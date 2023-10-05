@@ -99,34 +99,62 @@ header .container .menu {
   font-size: 40px;
 }
 
-.message {
+.contact-and-message {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.message .container {
+.contact-and-message .container .contact {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-.message .container .card {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 100px;
-  padding-left: 60px;
+.contact-and-message .container .contact .card {
+  padding: 30px;
   display: grid;
-  grid-template-columns: auto auto;
-}
-.message .container .card img {
-  width: 60px;
-  height: 60px;
-  margin-right: 25px;
-}
-.message .container .card .card-content h3 {
-  font-size: 22px;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  max-width: 420px;
   margin-bottom: 20px;
-  font-weight: 700;
 }
-.message .container .card .card-content p {
+.contact-and-message .container .contact .card img {
+  width: 50px;
+  height: 50px;
+}
+.contact-and-message .container .contact .card .card-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.contact-and-message .container .contact .card .card-content p {
   font-size: 18px;
+  margin-bottom: 0;
+}
+.contact-and-message .container .message-information {
+  background-color: #F0EFE9;
+  padding: 30px 20px;
+}
+.contact-and-message .container .message-information h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-and-message .container .message-information #message .form-input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+}
+.contact-and-message .container .message-information #message #your-message {
+  resize: none;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+.map {
+  background-color: #0E1021;
 }
 
 .footer-top {
@@ -206,6 +234,15 @@ footer .container .social-media a i:hover {
   .lets-connect .container h1 {
     font-size: 56px;
   }
+  .contact-and-message .container .contact .card {
+    padding: 45px;
+  }
+  .contact-and-message .container .message-information {
+    padding: 60px 40px;
+  }
+  .contact-and-message .container .message-information h2 {
+    font-size: 40px;
+  }
   .footer-top .container .info-menu {
     display: flex;
     justify-content: space-between;
@@ -280,6 +317,14 @@ footer .container .social-media a i:hover {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+  .contact-and-message .container .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-and-message .container .contact .card {
+    padding: 25px;
+    max-width: 300px;
+  }
   .footer-top .container {
     display: flex;
     justify-content: space-between;
@@ -320,12 +365,50 @@ footer .container .social-media a i:hover {
     padding-top: 105px;
     padding-bottom: 90px;
   }
+  .contact-and-message {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .contact-and-message .container .contact {
+    margin-bottom: 80px;
+  }
+  .contact-and-message .container .contact .card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 360px;
+  }
+  .contact-and-message .container .contact .card img {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .contact-and-message .container .contact .card .card-content h3 {
+    margin-bottom: 20px;
+  }
+  .contact-and-message .container .message-information {
+    padding: 120px 150px 100px 150px;
+  }
+  .contact-and-message .container .message-information h2 {
+    font-size: 45px;
+  }
+  .map iframe {
+    height: 620px;
+  }
   .footer-top {
     padding-top: 110px;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 1400px) {
+  .contact-and-message .container .contact .card {
+    max-width: 420px;
+    padding-left: 60px;
+  }
+  .contact-and-message .container .contact .card img {
+    margin-left: 0;
+    margin-top: -10px;
+    height: 60px;
+    width: 60px;
+  }
   .footer-top .container .logo-text {
     margin-right: 100px;
   }
