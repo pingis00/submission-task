@@ -275,16 +275,42 @@ header {
             row-gap: 20px;
             text-align: center;
 
-            a {
-                color: #191919;
-                text-decoration: none;
+            .feature-item {
+                position: relative;
 
-                &:hover {
-                    text-decoration: underline;  
+                a {
+                    color: #191919;
+                    text-decoration: none;
+    
+                    &:hover {
+                        text-decoration: underline;  
+                    }
+    
+                    h3 {
+                        margin-top: 15px;
+                    }
                 }
 
-                h3 {
-                    margin-top: 15px;
+                .plus-sign-1,
+                .plus-sign-2,
+                .plus-sign-3 {
+                    position: absolute;
+                }
+
+                .plus-sign-1
+                {
+                    top: -6px;
+                    left: 123px;
+                }
+
+                .plus-sign-2 {
+                    top: -2px;
+                    left: 147px;
+                }
+
+                .plus-sign-3 {
+                    top: 12px;
+                    left: 157px;
                 }
             }
         }       
@@ -304,6 +330,12 @@ header {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            .wavy-lines {
+                position: absolute;
+                top: 30px;
+                left: -35px
             }
 
             .founder {
@@ -332,6 +364,7 @@ header {
 
         .section-title {
             padding-top: 40px;
+            text-align: center;
 
             h2 {
                 margin-top: 30px;
@@ -443,7 +476,6 @@ header {
 .why-us {
     position: relative;
     padding-top: 60px;
-    padding-bottom: 30px;
 
     .grey-field {
         display: block;
@@ -880,6 +912,24 @@ footer {
 
             .features-text {
                 text-align: left;
+
+                .feature-item {
+
+                    .plus-sign-1{
+                        top: -6px;
+                        left: 14px;
+                    }
+
+                    .plus-sign-2 {
+                        top: -2px;
+                        left: 37px;
+                    }
+
+                    .plus-sign-3 {
+                        top: 12px;
+                        left: 47px;
+                    }
+                }
             } 
         }
     }
@@ -889,6 +939,10 @@ footer {
         .container {
 
             .image {
+
+                .wavy-lines {
+                    left: 45px;
+                }
 
                 .founder {
                     left: 32px;
@@ -1152,6 +1206,10 @@ footer {
 
             .image {
 
+                .wavy-lines {
+                    left: -35px;
+                }
+
                 .founder {
                     left: 0;
                 }
@@ -1160,6 +1218,7 @@ footer {
             .section-title {
                 padding-top: 0;
                 margin-left: 35px;
+                text-align: left;
             }
         }
     }    
@@ -1356,7 +1415,8 @@ footer {
     }
 
     .about-company {
-
+        padding-top: 120px;
+        padding-bottom: 120px;
         .container {
                 
             img{
@@ -1409,6 +1469,7 @@ footer {
 
         .container {
             display: flex;
+            justify-content: space-between;
             
             .why-choose-us {
                 width: 41%;
@@ -1423,9 +1484,9 @@ footer {
                 }
 
                 .feature-items {
-                    display: block;
-                    margin-bottom: -35px;
-
+                    display: flex;
+                    flex-direction: column;
+                    
                     .text {
 
                         img {
@@ -1563,8 +1624,8 @@ footer {
         .container {
 
             .why-choose-us {
-
                 margin-right: 190px;
+
                 .section-title {
 
                     h2 {
@@ -1573,10 +1634,10 @@ footer {
                 }
 
                 .feature-items {
-                    margin-bottom: -50px;
+                    
 
                     .text {
-                        padding-bottom: 35px;
+                        
                     }
                 }
             }

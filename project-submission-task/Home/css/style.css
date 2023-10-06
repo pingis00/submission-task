@@ -240,15 +240,35 @@ header .container .menu {
   row-gap: 20px;
   text-align: center;
 }
-.features .container .features-text a {
+.features .container .features-text .feature-item {
+  position: relative;
+}
+.features .container .features-text .feature-item a {
   color: #191919;
   text-decoration: none;
 }
-.features .container .features-text a:hover {
+.features .container .features-text .feature-item a:hover {
   text-decoration: underline;
 }
-.features .container .features-text a h3 {
+.features .container .features-text .feature-item a h3 {
   margin-top: 15px;
+}
+.features .container .features-text .feature-item .plus-sign-1,
+.features .container .features-text .feature-item .plus-sign-2,
+.features .container .features-text .feature-item .plus-sign-3 {
+  position: absolute;
+}
+.features .container .features-text .feature-item .plus-sign-1 {
+  top: -6px;
+  left: 123px;
+}
+.features .container .features-text .feature-item .plus-sign-2 {
+  top: -2px;
+  left: 147px;
+}
+.features .container .features-text .feature-item .plus-sign-3 {
+  top: 12px;
+  left: 157px;
 }
 
 .about-company {
@@ -262,6 +282,11 @@ header .container .menu {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.about-company .container .image .wavy-lines {
+  position: absolute;
+  top: 30px;
+  left: -35px;
 }
 .about-company .container .image .founder {
   position: absolute;
@@ -285,6 +310,7 @@ header .container .menu {
 }
 .about-company .container .section-title {
   padding-top: 40px;
+  text-align: center;
 }
 .about-company .container .section-title h2 {
   margin-top: 30px;
@@ -375,7 +401,6 @@ header .container .menu {
 .why-us {
   position: relative;
   padding-top: 60px;
-  padding-bottom: 30px;
 }
 .why-us .grey-field {
   display: block;
@@ -693,6 +718,21 @@ footer .container .social-media a i:hover {
   .features .container .features-text {
     text-align: left;
   }
+  .features .container .features-text .feature-item .plus-sign-1 {
+    top: -6px;
+    left: 14px;
+  }
+  .features .container .features-text .feature-item .plus-sign-2 {
+    top: -2px;
+    left: 37px;
+  }
+  .features .container .features-text .feature-item .plus-sign-3 {
+    top: 12px;
+    left: 47px;
+  }
+  .about-company .container .image .wavy-lines {
+    left: 45px;
+  }
   .about-company .container .image .founder {
     left: 32px;
   }
@@ -849,12 +889,16 @@ footer .container .social-media a i:hover {
   .about-company .container {
     display: flex;
   }
+  .about-company .container .image .wavy-lines {
+    left: -35px;
+  }
   .about-company .container .image .founder {
     left: 0;
   }
   .about-company .container .section-title {
     padding-top: 0;
     margin-left: 35px;
+    text-align: left;
   }
   .project-and-case {
     padding: 90px 0;
@@ -975,6 +1019,10 @@ footer .container .social-media a i:hover {
     margin-top: 30px;
     margin-bottom: 15px;
   }
+  .about-company {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .about-company .container img {
     padding-left: 50px;
   }
@@ -1009,6 +1057,7 @@ footer .container .social-media a i:hover {
   }
   .why-us .container {
     display: flex;
+    justify-content: space-between;
   }
   .why-us .container .why-choose-us {
     width: 41%;
@@ -1021,8 +1070,8 @@ footer .container .social-media a i:hover {
     width: 90%;
   }
   .why-us .container .why-choose-us .feature-items {
-    display: block;
-    margin-bottom: -35px;
+    display: flex;
+    flex-direction: column;
   }
   .why-us .container .why-choose-us .feature-items .text img {
     margin-right: 40px;
@@ -1110,12 +1159,6 @@ footer .container .social-media a i:hover {
   }
   .why-us .container .why-choose-us .section-title h2 {
     margin-top: 30px;
-  }
-  .why-us .container .why-choose-us .feature-items {
-    margin-bottom: -50px;
-  }
-  .why-us .container .why-choose-us .feature-items .text {
-    padding-bottom: 35px;
   }
   .testimonial .container .clients .client {
     margin-right: 50px;
