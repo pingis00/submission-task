@@ -245,7 +245,6 @@ header {
 }
 
 .features {
-
     border: 2px solid #1919191e;
     border-radius: 3px;
     max-width: 1520px;
@@ -302,7 +301,6 @@ header {
             position: relative;
 
             .img {
-                
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -365,7 +363,6 @@ header {
                         color: white;
                         border-radius: 25px;
                         box-shadow: 6px 6px 5px 2px #aeacac;
-
                     }
                     
                     i {
@@ -396,13 +393,13 @@ header {
 
         .section-title {
             margin-bottom: 40px;
+            text-align: center;
         }
 
         .services {
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
-            
 
             .service {
                 background-color: white;
@@ -467,7 +464,7 @@ header {
                 text-align: center;
             }
 
-            .img-text {
+            .feature-items {
 
                 .text {
                     display: flex;
@@ -558,35 +555,33 @@ header {
     }
 }
 
-.meet-our-team {
+.team-introduction {
     background-color: rgb(237,207,134);
     padding-top: 60px;
     padding-bottom: 60px;
 
     .container {
 
-        .intro {
+        .meet-our-team {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 50px;
+            margin-bottom: 50px; 
 
-            a {
+            .btn-yellow {
                 align-self: end;
+                text-align: center;
+                width: 225px;
+                height: auto;
+                border: 1px solid #191919;
+                border-radius: 35px;
 
-                .btn-yellow {
-                    width: 225px;
-                    height: auto;
-                    border: 1px solid #191919;
-                    border-radius: 35px;
-
-                    &:hover {
-                        box-shadow: 6px 6px 5px 2px #a68636;
-                    }
+                &:hover {
+                    box-shadow: 6px 6px 5px 2px #a68636;
                 }
-            }
+            }   
         }
 
-        .img-team {
+        .team-members {
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 15px;
@@ -638,7 +633,7 @@ header {
             font-size: 18px;
         }
 
-        .img-name {
+        .client-name {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
@@ -668,7 +663,7 @@ header {
 
     .container {
 
-        .top {
+        .intro-title {
 
             .section-title {
                 text-align: center;
@@ -746,12 +741,11 @@ header {
             outline: none;
             border: 1px solid rgba(25, 25, 25, 0.10);
             margin-right: 20px;
-        }
-        
+        }  
     }
 }
 
-.footer-top {
+.brand-summary {
     background-color: #0E1021;
     padding-top: 60px;
     position: relative;
@@ -767,7 +761,7 @@ header {
 
     .container {
 
-        .logo-text {
+        .brand-text {
 
             img {
                 margin-bottom: 30px;
@@ -779,7 +773,7 @@ header {
             }
         }
 
-        .info-menu {
+        .company-info {
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 30px;
@@ -878,10 +872,8 @@ footer {
         .container {
 
             .section-title {
-                text-align: left;
 
                 h2 {
-                    width: 80%;
                     margin: 0;
                 }
             }
@@ -923,7 +915,7 @@ footer {
 
         .container {   
 
-            .img-text {
+            .feature-items {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
             }  
@@ -939,25 +931,23 @@ footer {
 
             .project {
                 display: grid;
-                // grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr auto;
-
             }
         }
     }
 
-    .meet-our-team {
+    .team-introduction {
 
         .container {
 
-            .intro {
+            .meet-our-team {
 
                 i {
                     margin-left: 30px;
                 }
             }
 
-            .img-team {
+            .team-members {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
@@ -1006,11 +996,11 @@ footer {
         }
     }
 
-    .footer-top {
+    .brand-summary {
 
         .container {
 
-            .info-menu {
+            .company-info {
                 display: flex;
                 justify-content: space-between;
                 padding-bottom: 50px;
@@ -1038,6 +1028,7 @@ footer {
 }
 
 @media (min-width: 992px) {
+
     header {
 
         .container {
@@ -1147,11 +1138,8 @@ footer {
 
             .section-title {
                 padding-top: 0;
+                text-align: left;
                 margin-right: 80px;
-
-                h2 {
-                    width: 100%;
-                }
             }   
         }
     }
@@ -1172,17 +1160,6 @@ footer {
             .section-title {
                 padding-top: 0;
                 margin-left: 35px;
-
-                .buttons {
-
-                    .btn-black {
-
-                    }
-
-                    .btn {
-
-                    }
-                }
             }
         }
     }    
@@ -1198,16 +1175,17 @@ footer {
         }
     }
 
-    .meet-our-team {
+    .team-introduction {
         padding-top: 120px;
         padding-bottom: 70px;
+
         .container {
 
-            .intro {
+            .meet-our-team {
                 margin-bottom: 90px;
             }
 
-            .img-team {
+            .team-members {
 
                 .team-member {
 
@@ -1227,7 +1205,7 @@ footer {
 
         .container {
 
-            .top {
+            .intro-title {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1260,19 +1238,19 @@ footer {
         }  
     }
 
-    .footer-top {
+    .brand-summary {
 
         .container {
             display: flex;
             justify-content: space-between;
 
-            .logo-text {
+            .brand-text {
                 width: 27%;
                 margin-right: 50px;
                 padding-bottom: 50px;
             }
 
-            .info-menu {
+            .company-info {
                 width: 73%;
                 padding-top: 25px;
 
@@ -1289,6 +1267,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
+
     header {
 
         .container {
@@ -1402,6 +1381,7 @@ footer {
 
             .section-title {
                 width: 38%;
+                text-align: left;
             }
 
             .services {
@@ -1442,7 +1422,7 @@ footer {
                     }
                 }
 
-                .img-text {
+                .feature-items {
                     display: block;
                     margin-bottom: -35px;
 
@@ -1523,7 +1503,6 @@ footer {
     .newsletter {
         padding: 105px 0;
         
-
         .background-lines-right {
             bottom: 60px;
         }
@@ -1539,7 +1518,7 @@ footer {
         }
     }
 
-    .footer-top {
+    .brand-summary {
         padding-top: 110px;
         padding-bottom: 15px;
     }
@@ -1584,6 +1563,7 @@ footer {
         .container {
 
             .why-choose-us {
+
                 margin-right: 190px;
                 .section-title {
 
@@ -1592,7 +1572,7 @@ footer {
                     }
                 }
 
-                .img-text {
+                .feature-items {
                     margin-bottom: -50px;
 
                     .text {
@@ -1623,11 +1603,11 @@ footer {
         }
     }
 
-    .footer-top {
+    .brand-summary {
 
         .container {
 
-            .logo-text {
+            .brand-text {
                 margin-right: 100px;
             }
         }

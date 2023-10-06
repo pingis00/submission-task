@@ -335,6 +335,7 @@ header .container .menu {
 }
 .our-services .container .section-title {
   margin-bottom: 40px;
+  text-align: center;
 }
 .our-services .container .services {
   display: grid;
@@ -389,7 +390,7 @@ header .container .menu {
   padding-bottom: 30px;
   text-align: center;
 }
-.why-us .container .why-choose-us .img-text .text {
+.why-us .container .why-choose-us .feature-items .text {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
@@ -397,11 +398,11 @@ header .container .menu {
   text-decoration: none;
   color: #191919;
 }
-.why-us .container .why-choose-us .img-text .text:hover {
+.why-us .container .why-choose-us .feature-items .text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.why-us .container .why-choose-us .img-text .text img {
+.why-us .container .why-choose-us .feature-items .text img {
   margin-right: 20px;
   margin-bottom: 25px;
 }
@@ -456,39 +457,38 @@ header .container .menu {
   margin-top: 50px;
 }
 
-.meet-our-team {
+.team-introduction {
   background-color: rgb(237, 207, 134);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.meet-our-team .container .intro {
+.team-introduction .container .meet-our-team {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.meet-our-team .container .intro a {
+.team-introduction .container .meet-our-team .btn-yellow {
   align-self: end;
-}
-.meet-our-team .container .intro a .btn-yellow {
+  text-align: center;
   width: 225px;
   height: auto;
   border: 1px solid #191919;
   border-radius: 35px;
 }
-.meet-our-team .container .intro a .btn-yellow:hover {
+.team-introduction .container .meet-our-team .btn-yellow:hover {
   box-shadow: 6px 6px 5px 2px #a68636;
 }
-.meet-our-team .container .img-team {
+.team-introduction .container .team-members {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-.meet-our-team .container .img-team img {
+.team-introduction .container .team-members img {
   width: 100%;
   height: auto;
 }
-.meet-our-team .container .img-team h3 {
+.team-introduction .container .team-members h3 {
   font-size: 19px;
   padding-top: 10px;
   margin-bottom: 0;
@@ -521,16 +521,16 @@ header .container .menu {
   line-height: 2;
   font-size: 18px;
 }
-.testimonial .container .img-name {
+.testimonial .container .client-name {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.testimonial .container .img-name img {
+.testimonial .container .client-name img {
   margin-right: 20px;
   margin-bottom: 25px;
 }
-.testimonial .container .img-name p {
+.testimonial .container .client-name p {
   color: #F94D1C;
   font-size: 16px;
   font-weight: 400;
@@ -544,13 +544,13 @@ header .container .menu {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.article-news .container .top .section-title {
+.article-news .container .intro-title .section-title {
   text-align: center;
 }
-.article-news .container .top .section-title h2 {
+.article-news .container .intro-title .section-title h2 {
   margin-bottom: 20px;
 }
-.article-news .container .top a {
+.article-news .container .intro-title a {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -602,47 +602,47 @@ header .container .menu {
   margin-right: 20px;
 }
 
-.footer-top {
+.brand-summary {
   background-color: #0E1021;
   padding-top: 60px;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
-.footer-top .background-lines-grey {
+.brand-summary .background-lines-grey {
   position: absolute;
   right: -130px;
   bottom: -95px;
   z-index: -1;
 }
-.footer-top .container .logo-text img {
+.brand-summary .container .brand-text img {
   margin-bottom: 30px;
 }
-.footer-top .container .logo-text p {
+.brand-summary .container .brand-text p {
   color: rgba(255, 255, 255, 0.6666666667);
   margin-bottom: 50px;
 }
-.footer-top .container .info-menu {
+.brand-summary .container .company-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
 }
-.footer-top .container .info-menu .info h3 {
+.brand-summary .container .company-info .info h3 {
   color: #ffffff;
   margin-bottom: 15px;
 }
-.footer-top .container .info-menu .info ul {
+.brand-summary .container .company-info .info ul {
   list-style-type: none;
   padding: 0;
 }
-.footer-top .container .info-menu .info ul a {
+.brand-summary .container .company-info .info ul a {
   text-decoration: none;
 }
-.footer-top .container .info-menu .info ul a:hover {
+.brand-summary .container .company-info .info ul a:hover {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.6666666667);
 }
-.footer-top .container .info-menu .info ul a li {
+.brand-summary .container .company-info .info ul a li {
   padding: 8px;
   padding-left: 0;
   color: rgba(255, 255, 255, 0.6666666667);
@@ -687,11 +687,7 @@ footer .container .social-media a i:hover {
     display: inline-block;
     margin-right: 10px;
   }
-  .features .container .section-title {
-    text-align: left;
-  }
   .features .container .section-title h2 {
-    width: 80%;
     margin: 0;
   }
   .features .container .features-text {
@@ -706,7 +702,7 @@ footer .container .social-media a i:hover {
   .why-us .grey-field {
     height: 270px;
   }
-  .why-us .container .img-text {
+  .why-us .container .feature-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -719,10 +715,10 @@ footer .container .social-media a i:hover {
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
-  .meet-our-team .container .intro i {
+  .team-introduction .container .meet-our-team i {
     margin-left: 30px;
   }
-  .meet-our-team .container .img-team {
+  .team-introduction .container .team-members {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .article-news .container .news {
@@ -748,7 +744,7 @@ footer .container .social-media a i:hover {
   .newsletter .container h2 {
     font-size: 40px;
   }
-  .footer-top .container .info-menu {
+  .brand-summary .container .company-info {
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
@@ -844,10 +840,8 @@ footer .container .social-media a i:hover {
   }
   .features .container .section-title {
     padding-top: 0;
+    text-align: left;
     margin-right: 80px;
-  }
-  .features .container .section-title h2 {
-    width: 100%;
   }
   .about-company {
     padding: 90px 0;
@@ -868,14 +862,14 @@ footer .container .social-media a i:hover {
   .project-and-case .container .section-title {
     padding-bottom: 70px;
   }
-  .meet-our-team {
+  .team-introduction {
     padding-top: 120px;
     padding-bottom: 70px;
   }
-  .meet-our-team .container .intro {
+  .team-introduction .container .meet-our-team {
     margin-bottom: 90px;
   }
-  .meet-our-team .container .img-team .team-member h3 {
+  .team-introduction .container .team-members .team-member h3 {
     font-size: 22px;
     padding-top: 35px;
     padding-bottom: 10px;
@@ -884,12 +878,12 @@ footer .container .social-media a i:hover {
     padding-top: 120px;
     padding-bottom: 90px;
   }
-  .article-news .container .top {
+  .article-news .container .intro-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .article-news .container .top .section-title {
+  .article-news .container .intro-title .section-title {
     text-align: left;
   }
   .article-news .container .news article a img {
@@ -902,20 +896,20 @@ footer .container .social-media a i:hover {
   .article-news .container .dot {
     margin-top: 65px;
   }
-  .footer-top .container {
+  .brand-summary .container {
     display: flex;
     justify-content: space-between;
   }
-  .footer-top .container .logo-text {
+  .brand-summary .container .brand-text {
     width: 27%;
     margin-right: 50px;
     padding-bottom: 50px;
   }
-  .footer-top .container .info-menu {
+  .brand-summary .container .company-info {
     width: 73%;
     padding-top: 25px;
   }
-  .footer-top .container .info-menu .info h3 {
+  .brand-summary .container .company-info .info h3 {
     margin-right: 35px;
     margin-bottom: 30px;
   }
@@ -996,6 +990,7 @@ footer .container .social-media a i:hover {
   }
   .our-services .container .section-title {
     width: 38%;
+    text-align: left;
   }
   .our-services .container .services {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1025,11 +1020,11 @@ footer .container .social-media a i:hover {
   .why-us .container .why-choose-us .section-title h2 {
     width: 90%;
   }
-  .why-us .container .why-choose-us .img-text {
+  .why-us .container .why-choose-us .feature-items {
     display: block;
     margin-bottom: -35px;
   }
-  .why-us .container .why-choose-us .img-text .text img {
+  .why-us .container .why-choose-us .feature-items .text img {
     margin-right: 40px;
   }
   .why-us .container .img {
@@ -1091,7 +1086,7 @@ footer .container .social-media a i:hover {
     font-size: 45px;
     margin-bottom: 0;
   }
-  .footer-top {
+  .brand-summary {
     padding-top: 110px;
     padding-bottom: 15px;
   }
@@ -1116,10 +1111,10 @@ footer .container .social-media a i:hover {
   .why-us .container .why-choose-us .section-title h2 {
     margin-top: 30px;
   }
-  .why-us .container .why-choose-us .img-text {
+  .why-us .container .why-choose-us .feature-items {
     margin-bottom: -50px;
   }
-  .why-us .container .why-choose-us .img-text .text {
+  .why-us .container .why-choose-us .feature-items .text {
     padding-bottom: 35px;
   }
   .testimonial .container .clients .client {
@@ -1128,7 +1123,7 @@ footer .container .social-media a i:hover {
   .newsletter form {
     margin-right: 50px;
   }
-  .footer-top .container .logo-text {
+  .brand-summary .container .brand-text {
     margin-right: 100px;
   }
 }

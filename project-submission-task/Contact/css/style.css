@@ -92,6 +92,17 @@ header .container .menu {
   color: #191919;
   font-weight: 300;
   margin-right: 10px;
+  position: relative;
+}
+.lets-connect .container nav a:hover::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
 .lets-connect .container h1 {
   font-family: "DM Sans", sans-serif;
@@ -156,48 +167,51 @@ header .container .menu {
 .map {
   background-color: #0E1021;
 }
+.map iframe {
+  width: 100%;
+}
 
-.footer-top {
+.brand-summary {
   background-color: #0E1021;
   padding-top: 60px;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
-.footer-top .background-lines-grey {
+.brand-summary .background-lines-grey {
   position: absolute;
   right: -130px;
   bottom: -95px;
   z-index: -1;
 }
-.footer-top .container .logo-text img {
+.brand-summary .container .brand-text img {
   margin-bottom: 30px;
 }
-.footer-top .container .logo-text p {
+.brand-summary .container .brand-text p {
   color: rgba(255, 255, 255, 0.6666666667);
   margin-bottom: 50px;
 }
-.footer-top .container .info-menu {
+.brand-summary .container .company-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
 }
-.footer-top .container .info-menu .info h3 {
+.brand-summary .container .company-info .info h3 {
   color: #ffffff;
   margin-bottom: 15px;
 }
-.footer-top .container .info-menu .info ul {
+.brand-summary .container .company-info .info ul {
   list-style-type: none;
   padding: 0;
 }
-.footer-top .container .info-menu .info ul a {
+.brand-summary .container .company-info .info ul a {
   text-decoration: none;
 }
-.footer-top .container .info-menu .info ul a:hover {
+.brand-summary .container .company-info .info ul a:hover {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.6666666667);
 }
-.footer-top .container .info-menu .info ul a li {
+.brand-summary .container .company-info .info ul a li {
   padding: 8px;
   padding-left: 0;
   color: rgba(255, 255, 255, 0.6666666667);
@@ -243,7 +257,7 @@ footer .container .social-media a i:hover {
   .contact-and-message .container .message-information h2 {
     font-size: 40px;
   }
-  .footer-top .container .info-menu {
+  .brand-summary .container .company-info {
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
@@ -325,20 +339,20 @@ footer .container .social-media a i:hover {
     padding: 25px;
     max-width: 300px;
   }
-  .footer-top .container {
+  .brand-summary .container {
     display: flex;
     justify-content: space-between;
   }
-  .footer-top .container .logo-text {
+  .brand-summary .container .brand-text {
     width: 27%;
     margin-right: 50px;
     padding-bottom: 50px;
   }
-  .footer-top .container .info-menu {
+  .brand-summary .container .company-info {
     width: 73%;
     padding-top: 25px;
   }
-  .footer-top .container .info-menu .info h3 {
+  .brand-summary .container .company-info .info h3 {
     margin-right: 35px;
     margin-bottom: 30px;
   }
@@ -393,7 +407,7 @@ footer .container .social-media a i:hover {
   .map iframe {
     height: 620px;
   }
-  .footer-top {
+  .brand-summary {
     padding-top: 110px;
     padding-bottom: 15px;
   }
@@ -409,7 +423,7 @@ footer .container .social-media a i:hover {
     height: 60px;
     width: 60px;
   }
-  .footer-top .container .logo-text {
+  .brand-summary .container .brand-text-text {
     margin-right: 100px;
   }
 }

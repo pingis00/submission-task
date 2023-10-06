@@ -96,12 +96,24 @@ header {
 
         nav {
             padding-bottom: 15px;
-
+    
             a {
                 text-decoration: none;
                 color: #191919;
                 font-weight: 300;
                 margin-right: 10px;
+                position: relative;
+    
+                &:hover::after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 15px;
+                    background-color: #191919;
+                    left: 50%;
+                    bottom: -3px;
+                    transform: translate((calc(50% - 15px)));
+                }
             }
         }
 
@@ -187,10 +199,13 @@ header {
 
 .map {
     background-color: #0E1021;
-    
+
+    iframe {
+        width: 100%;
+    }
 }
 
-.footer-top {
+.brand-summary {
     background-color: #0E1021;
     padding-top: 60px;
     position: relative;
@@ -206,7 +221,7 @@ header {
 
     .container {
 
-        .logo-text {
+        .brand-text {
 
             img {
                 margin-bottom: 30px;
@@ -218,7 +233,7 @@ header {
             }
         }
 
-        .info-menu {
+        .company-info {
             display: grid;
             grid-template-columns: 1fr 1fr;
             row-gap: 30px;
@@ -320,11 +335,11 @@ footer {
         }
     }
 
-    .footer-top {
+    .brand-summary {
 
         .container {
 
-            .info-menu {
+            .company-info {
                 display: flex;
                 justify-content: space-between;
                 padding-bottom: 50px;
@@ -444,19 +459,19 @@ footer {
         }     
     }
 
-    .footer-top {
+    .brand-summary {
 
         .container {
             display: flex;
             justify-content: space-between;
 
-            .logo-text {
+            .brand-text {
                 width: 27%;
                 margin-right: 50px;
                 padding-bottom: 50px;
             }
 
-            .info-menu {
+            .company-info {
                 width: 73%;
                 padding-top: 25px;
 
@@ -550,7 +565,7 @@ footer {
         }
     }
 
-    .footer-top {
+    .brand-summary {
         padding-top: 110px;
         padding-bottom: 15px;
     }
@@ -578,11 +593,11 @@ footer {
         }
     }
 
-    .footer-top {
+    .brand-summary {
 
         .container {
 
-            .logo-text {
+            .brand-text-text {
                 margin-right: 100px;
             }
         }
