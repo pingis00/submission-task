@@ -51,7 +51,6 @@ html, body {
     border-radius: 25px;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-
     &:hover {
         background-color: #FFFFFF;
         border: 1px solid #191919;
@@ -376,7 +375,7 @@ header {
                 font-size: 16px;
             }
 
-            .buttons {
+            .center-content {
                 margin-top: 60px;
                 display: flex;
 
@@ -492,17 +491,16 @@ header {
         .why-choose-us {
 
             .section-title {
-                padding-bottom: 30px;
+                padding-bottom: 40px;
                 text-align: center;
             }
 
             .feature-items {
-
+                
                 .text {
                     display: flex;
                     align-items: center;
-                    padding-bottom: 20px;
-                    margin-left: 15px;
+                    padding-bottom: 25px;
                     text-decoration: none;
                     color: #191919;
 
@@ -513,7 +511,10 @@ header {
 
                     img {
                         margin-right: 20px;
-                        margin-bottom: 25px;        
+                        margin-bottom: 25px; 
+                        border: 1px solid #ccc;     
+                        border-radius: 50%;
+                        padding: 12px;
                     }
                 }
             }
@@ -647,45 +648,45 @@ header {
         max-width: 1520px;
         width: 100%;
         height: auto;
-    }
 
-    .container {
+        .container {
 
-        .section-title {
-            text-align: center;
-            padding-bottom: 20px;
+            .section-title {
+                text-align: center;
+                padding-bottom: 20px;
+            } 
+        
+            .stars {
+                margin-bottom: 10px;
+            } 
+    
+            p {
+                line-height: 2;
+                font-size: 18px;
+            }
+    
+            .client-name {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+    
+                img {
+                    margin-right: 20px;
+                    margin-bottom: 25px;
+                }
+    
+                p {
+                    color: #F94D1C;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
         } 
     
-        .stars {
-            margin-bottom: 10px;
-        } 
-
-        p {
-            line-height: 2;
-            font-size: 18px;
+        .btn-black {
+            padding: 18px 30px;
+            border-radius: 40px;
         }
-
-        .client-name {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-
-            img {
-                margin-right: 20px;
-                margin-bottom: 25px;
-            }
-
-            p {
-                color: #F94D1C;
-                font-size: 16px;
-                font-weight: 400;
-            }
-        }
-    } 
-
-    .btn-black {
-        padding: 18px 30px;
-        border-radius: 40px;
     }
 }
 
@@ -1022,8 +1023,7 @@ footer {
 
                         img {
                             padding-top: 50px;
-                        }
-                        
+                        }    
                     }
                 }
             }
@@ -1221,7 +1221,14 @@ footer {
                 text-align: left;
             }
         }
-    }    
+    }   
+    
+    .why-us {
+
+        .grey-field {
+            height: 320px;
+        }
+    }
 
     .project-and-case {
         padding: 90px 0;
@@ -1417,6 +1424,7 @@ footer {
     .about-company {
         padding-top: 120px;
         padding-bottom: 120px;
+        
         .container {
                 
             img{
@@ -1427,8 +1435,9 @@ footer {
                 width: 40%;
                 margin-left: 70px;
 
-                .buttons {
+                .center-content {
                     margin-top: 120px;
+                    justify-content: left;
                 }
             }
         }
@@ -1464,7 +1473,7 @@ footer {
         .grey-field {
             width: 58%;
             right: 0;
-            height: 380px;
+            height: 430px;
         }
 
         .container {
@@ -1472,8 +1481,8 @@ footer {
             justify-content: space-between;
             
             .why-choose-us {
-                width: 41%;
-                margin-right: 150px;
+                width: 37%;
+                margin-right: 70px;
 
                 .section-title {
                     text-align: left;
@@ -1490,7 +1499,15 @@ footer {
                     .text {
 
                         img {
-                            margin-right: 40px;
+                            margin-right: 25px;
+                        }
+                    }
+
+                    .text-bottom {
+                        padding-bottom: 0;
+
+                        p {
+                            margin-bottom: 0;
                         }
                     }
                 }
@@ -1525,41 +1542,55 @@ footer {
         .background {
             padding-top: 120px;
             padding-bottom: 120px;
-        }
-        .container {
 
-            .section-title {
-                padding-bottom: 90px;
-            }
+            .container {
 
-            .clients {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-
-                .client {
-                    margin-left: 30px;
-                    margin-right: 10px;
-
-                    .stars {
-                        margin-bottom: 30px;
-                    }
-
-                    p {
-                        margin-bottom: 30px;
+                .section-title {
+                    padding-bottom: 90px;
+                }
+    
+                .clients {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+    
+                    .client {
+                        margin-left: 30px;
+                        margin-right: 10px;
+    
+                        .stars {
+                            margin-bottom: 30px;
+                        }
+    
+                        p {
+                            margin-bottom: 30px;
+                        }
                     }
                 }
-            }
-        } 
-        
-        .center-content {
-            margin-top: 90px;
+            } 
             
-            .btn-black {
-                width: 180px;
-                text-align: center;
+            .center-content {
+                margin-top: 90px;
+                
+                .btn-black {
+                    width: 180px;
+                    text-align: center;
+                }
+            }
+        }   
+    }    
+
+    .article-news {
+
+        .container {
+
+            .news {
+
+                h3 {
+                    width: 80%;
+                }
             }
         }
-    }    
+    }
 
     .newsletter {
         padding: 105px 0;
@@ -1617,14 +1648,14 @@ footer {
     .why-us {
         
         .grey-field {
-            height: 450px;
-            width: 56%;
+            height: 430px;
+            width: 57%;
         }
 
         .container {
 
             .why-choose-us {
-                margin-right: 190px;
+                margin-right: 150px;
 
                 .section-title {
 
@@ -1638,16 +1669,36 @@ footer {
 
     .testimonial {
 
-        .container {
+        .background {
 
-            .clients {
-                
-                .client {
-                    margin-right: 50px;
+            .container {
+
+                .clients {
+                    
+                    .client {
+                        margin-right: 50px;
+                    }
                 }
             }
         }
-    }       
+    }     
+    
+    .article-news {
+
+        .container {
+
+            .news {
+
+                .h3-1 {
+                    width: 70%;
+                }
+
+                h3 {
+                    width: 74%;
+                }
+            }
+        }
+    }
 
     .newsletter {
         

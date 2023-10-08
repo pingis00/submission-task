@@ -320,11 +320,11 @@ header .container .menu {
   color: #191919;
   font-size: 16px;
 }
-.about-company .container .section-title .buttons {
+.about-company .container .section-title .center-content {
   margin-top: 60px;
   display: flex;
 }
-.about-company .container .section-title .buttons .btn-intro {
+.about-company .container .section-title .center-content .btn-intro {
   margin-left: 20px;
   display: flex;
   align-items: center;
@@ -335,13 +335,13 @@ header .container .menu {
   border-radius: 25px;
   padding: 0 10px;
 }
-.about-company .container .section-title .buttons .btn-intro:hover {
+.about-company .container .section-title .center-content .btn-intro:hover {
   background-color: black;
   color: white;
   border-radius: 25px;
   box-shadow: 6px 6px 5px 2px #aeacac;
 }
-.about-company .container .section-title .buttons .btn-intro i {
+.about-company .container .section-title .center-content .btn-intro i {
   margin-right: 19px;
   font-size: 3rem;
 }
@@ -412,14 +412,13 @@ header .container .menu {
   z-index: -1;
 }
 .why-us .container .why-choose-us .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   text-align: center;
 }
 .why-us .container .why-choose-us .feature-items .text {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
-  margin-left: 15px;
+  padding-bottom: 25px;
   text-decoration: none;
   color: #191919;
 }
@@ -430,6 +429,9 @@ header .container .menu {
 .why-us .container .why-choose-us .feature-items .text img {
   margin-right: 20px;
   margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 12px;
 }
 .why-us .container .img {
   display: flex;
@@ -535,32 +537,32 @@ header .container .menu {
   width: 100%;
   height: auto;
 }
-.testimonial .container .section-title {
+.testimonial .background .container .section-title {
   text-align: center;
   padding-bottom: 20px;
 }
-.testimonial .container .stars {
+.testimonial .background .container .stars {
   margin-bottom: 10px;
 }
-.testimonial .container p {
+.testimonial .background .container p {
   line-height: 2;
   font-size: 18px;
 }
-.testimonial .container .client-name {
+.testimonial .background .container .client-name {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.testimonial .container .client-name img {
+.testimonial .background .container .client-name img {
   margin-right: 20px;
   margin-bottom: 25px;
 }
-.testimonial .container .client-name p {
+.testimonial .background .container .client-name p {
   color: #F94D1C;
   font-size: 16px;
   font-weight: 400;
 }
-.testimonial .btn-black {
+.testimonial .background .btn-black {
   padding: 18px 30px;
   border-radius: 40px;
 }
@@ -900,6 +902,9 @@ footer .container .social-media a i:hover {
     margin-left: 35px;
     text-align: left;
   }
+  .why-us .grey-field {
+    height: 320px;
+  }
   .project-and-case {
     padding: 90px 0;
   }
@@ -1030,8 +1035,9 @@ footer .container .social-media a i:hover {
     width: 40%;
     margin-left: 70px;
   }
-  .about-company .container .section-title .buttons {
+  .about-company .container .section-title .center-content {
     margin-top: 120px;
+    justify-content: left;
   }
   .our-services {
     padding: 120px 0;
@@ -1053,15 +1059,15 @@ footer .container .social-media a i:hover {
   .why-us .grey-field {
     width: 58%;
     right: 0;
-    height: 380px;
+    height: 430px;
   }
   .why-us .container {
     display: flex;
     justify-content: space-between;
   }
   .why-us .container .why-choose-us {
-    width: 41%;
-    margin-right: 150px;
+    width: 37%;
+    margin-right: 70px;
   }
   .why-us .container .why-choose-us .section-title {
     text-align: left;
@@ -1074,7 +1080,13 @@ footer .container .social-media a i:hover {
     flex-direction: column;
   }
   .why-us .container .why-choose-us .feature-items .text img {
-    margin-right: 40px;
+    margin-right: 25px;
+  }
+  .why-us .container .why-choose-us .feature-items .text-bottom {
+    padding-bottom: 0;
+  }
+  .why-us .container .why-choose-us .feature-items .text-bottom p {
+    margin-bottom: 0;
   }
   .why-us .container .img {
     width: 59%;
@@ -1097,29 +1109,32 @@ footer .container .social-media a i:hover {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .testimonial .container .section-title {
+  .testimonial .background .container .section-title {
     padding-bottom: 90px;
   }
-  .testimonial .container .clients {
+  .testimonial .background .container .clients {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .testimonial .container .clients .client {
+  .testimonial .background .container .clients .client {
     margin-left: 30px;
     margin-right: 10px;
   }
-  .testimonial .container .clients .client .stars {
+  .testimonial .background .container .clients .client .stars {
     margin-bottom: 30px;
   }
-  .testimonial .container .clients .client p {
+  .testimonial .background .container .clients .client p {
     margin-bottom: 30px;
   }
-  .testimonial .center-content {
+  .testimonial .background .center-content {
     margin-top: 90px;
   }
-  .testimonial .center-content .btn-black {
+  .testimonial .background .center-content .btn-black {
     width: 180px;
     text-align: center;
+  }
+  .article-news .container .news h3 {
+    width: 80%;
   }
   .newsletter {
     padding: 105px 0;
@@ -1151,17 +1166,23 @@ footer .container .social-media a i:hover {
     margin-left: 190px;
   }
   .why-us .grey-field {
-    height: 450px;
-    width: 56%;
+    height: 430px;
+    width: 57%;
   }
   .why-us .container .why-choose-us {
-    margin-right: 190px;
+    margin-right: 150px;
   }
   .why-us .container .why-choose-us .section-title h2 {
     margin-top: 30px;
   }
-  .testimonial .container .clients .client {
+  .testimonial .background .container .clients .client {
     margin-right: 50px;
+  }
+  .article-news .container .news .h3-1 {
+    width: 70%;
+  }
+  .article-news .container .news h3 {
+    width: 74%;
   }
   .newsletter form {
     margin-right: 50px;
