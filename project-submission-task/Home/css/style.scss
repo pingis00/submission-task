@@ -322,10 +322,10 @@ header {
 
     .container {
 
-        .image {
+        .about-company-image {
             position: relative;
 
-            .img {
+            .founder-image {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -337,7 +337,7 @@ header {
                 left: -35px
             }
 
-            .founder {
+            .founder-info {
                 position: absolute;
                 bottom: 40px;
                 left: 0;
@@ -370,12 +370,12 @@ header {
                 margin-bottom: 35px;
             }
 
-            .regular-text {
+            .company-info {
                 color: #191919;
                 font-size: 16px;
             }
 
-            .center-content {
+            .intro-buttons {
                 margin-top: 60px;
                 display: flex;
 
@@ -476,7 +476,7 @@ header {
     position: relative;
     padding-top: 60px;
 
-    .grey-field {
+    .background-field {
         display: block;
         position: absolute;
         width: 100%;
@@ -497,7 +497,7 @@ header {
 
             .feature-items {
                 
-                .text {
+                .feature-item {
                     display: flex;
                     align-items: center;
                     padding-bottom: 25px;
@@ -939,13 +939,13 @@ footer {
 
         .container {
 
-            .image {
+            .about-company-image {
 
                 .wavy-lines {
                     left: 45px;
                 }
 
-                .founder {
+                .founder-info {
                     left: 32px;
                 }
             }
@@ -964,7 +964,7 @@ footer {
 
     .why-us {
 
-        .grey-field {
+        .background-field {
             height: 270px;      
         }
 
@@ -1204,13 +1204,13 @@ footer {
         .container {
             display: flex;
 
-            .image {
+            .about-company-image {
 
                 .wavy-lines {
                     left: -35px;
                 }
 
-                .founder {
+                .founder-info {
                     left: 0;
                 }
             }
@@ -1225,7 +1225,7 @@ footer {
     
     .why-us {
 
-        .grey-field {
+        .background-field {
             height: 320px;
         }
     }
@@ -1426,16 +1426,23 @@ footer {
         padding-bottom: 120px;
         
         .container {
-                
-            img{
-                padding-left: 50px;
+
+            .about-company-image {
+
+                .wavy-lines {
+                    left: 20px;
+                }
+
+                .founder-image {
+                    margin-left: 55px;
+                }
             }
 
             .section-title {
                 width: 40%;
                 margin-left: 70px;
 
-                .center-content {
+                .intro-buttons {
                     margin-top: 120px;
                     justify-content: left;
                 }
@@ -1470,7 +1477,7 @@ footer {
 
     .why-us {
 
-        .grey-field {
+        .background-field {
             width: 58%;
             right: 0;
             height: 430px;
@@ -1496,7 +1503,7 @@ footer {
                     display: flex;
                     flex-direction: column;
                     
-                    .text {
+                    .feature-item {
 
                         img {
                             margin-right: 25px;
@@ -1641,13 +1648,15 @@ footer {
 
             .section-title {
                 margin-left: 190px;
+
+
             }
         }
     }
 
     .why-us {
         
-        .grey-field {
+        .background-field {
             height: 430px;
             width: 57%;
         }
